@@ -1,0 +1,32 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Thiago Bomfim",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thigsbomfim/modulo3-projeto-individual.git"
+  },
+  "keywords": [
+    "Academia",
+    "Suplementos",
+    "Atividades",
+    "Nutrição",
+    "json-server"
+  ],
+  "bugs": {
+    "url": "https://github.com/thigsbomfim/modulo3-projeto-individual/issues"
+  },
+  "homepage": "https://github.com/thigsbomfim/modulo3-projeto-individual#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "json-server": "^0.17.1"
+  },
+  "devDependencies": {},
+  "description": ""
+}

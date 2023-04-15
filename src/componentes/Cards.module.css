@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,100;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100;1,400&display=swap');
+
+
+body {
+	background: linear-gradient(-45deg, #3c3c3c ,#777,black, white);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+
+}
+.cards{
+    
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+    transition: all 0.5s;
+    border: 2px solid #4aff00;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 150px 
+    
+}
+
+.ironshape{
+    color:#4aff00;
+}
+.imgAcademia{
+    width: 400px;
+    height: 250px;
+   
+}
+
+.cards:hover{
+    -webkit-transform: scale(1.07);
+    transform: scale(1.07);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 1);
+}
+.Pai{
+display:flex;
+gap: 50px;
+justify-content: center
+
+}
+.papai{
+    display: inline;
+    padding: 60px;
+    border-radius: 5px; 
+
+}
+.titulo{
+    font-size: 40px;
+    margin-bottom: 90px;
+   text-align: center;
+   color: aliceblue;
+   font-family: 'Poppins', sans-serif;
+    margin-bottom: 30px
+
+}
+.titulo span{
+    color: #4aff00;
+    text-shadow: 0 0 8px black;
+    font-size: 60px;
+}
+.texto{
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif; 
+    width: 900px;
+    margin-left: 250px;
+    font-weight: 2;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    font-size: 17px
+
+}

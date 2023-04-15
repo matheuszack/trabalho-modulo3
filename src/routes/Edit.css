@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,100;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100;1,400&display=swap');
+
+
+.new_client_edit{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 52vh;
+}
+
+.titulo_cadastro_edit{
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  color: #4aff00;
+  margin-bottom: 15px;
+}
+
+.form_cadastro_edit{
+  width: 390px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  background-color: black;
+  opacity: .9;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #4aff00;
+}
+
+.form_control_edit{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  
+}
+
+
+.form_control_edit label{
+  margin-bottom: 3px;
+  text-align: start;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  
+
+}
+
+.form_control_edit input::placeholder{ 
+  font-size: 13px;
+  color: #aeaeae;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.form_control_edit input {
+  padding: .5rem;
+  border-radius: 5px;
+  border: 1px solid #4aff00;
+  background-color: #303134;
+  outline: none;
+  color: white;
+  
+}
+.form_control_edit select{
+  padding: .5rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: rgb(159, 159, 159);
+  font-family: 'Poppins', sans-serif;
+  width: 187px;
+  height: 33px;
+}
+
+.form_control_edit select option{
+  font-weight: bold;
+}
+
+.break{
+  width: 150px;
+}
+.btn_cadastro_edit {
+  background-color: #303134;
+  border: 1px solid #303134;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 10px;
+  width: 120px;
+  height: 30px;
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 20px;
+}
+
+
+.btn_cadastro_edit:hover{
+  color: #303134;
+  background-color: #4aff00;
+  font-weight: bold;
+}
+
+
+.btn_voltar_edit{
+  background-color: #303134;
+  border: 1px solid #303134;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 10px;
+  width: 120px;
+  height: 30px;
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 20px;
+}
+
+
+.btn_voltar_edit:hover{
+  color: #303134;
+  background-color: white;
+  font-weight: bold;
+}
+
+
+
+input[type=number]::-webkit-inner-spin-button { 
+  -webkit-appearance: none;
+  
+}
+input[type=number] { 
+ -moz-appearance: textfield;
+ appearance: textfield;
+
+}

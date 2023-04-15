@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,100;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100;1,400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  color: black;
+  text-decoration: none;
+  transition: 0.3s;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px
+}
+
+.navbar .navbarListaLi1{
+  font-weight: 600;
+}
+.navbar .navbarListaLi2{
+  font-weight: 600
+}
+.navbar .navbarListaLi3{
+  font-weight: 600
+}
+
+.navbar a:hover {
+  opacity: 0.8;
+}
+
+
+.logo {
+  margin-top: 20px;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+/* box nav */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: white;
+  height: 10vh;
+  box-shadow: 0 4px 6px rgb(30 30 30 / 90%);
+  margin-bottom: 80px;
+}
+
+/* box ul nav */
+.navbarLista {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  font-weight: 600;
+}
+
+.navbarLista li {
+  letter-spacing: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+/* icon carrinho */
+.cartIcon {
+  display: flex;
+  flex-direction: column;
+}
+
+.cartIcon img {
+  width: 32px;
+  height: 32px;
+}
+
+/* contagem de itens no carrinho */
+.cartIcon span {
+  text-align: center;
+  margin-left: 3px;
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  background-color: #4aff00;
+  border-radius: 50%;
+}
+
+/* icon menu hamburguer */
+.menu_mobile {
+  cursor: pointer;
+  display: none;
+  margin-right: 47px;
+}
+
+/* box menu hamburguer */
+.menu_mobile div {
+  width: 32px;
+  height: 2px;
+  background: black;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+
+
+/*  */
+@media (max-width: 999px) and (min-width: 200px) {
+
+  body {
+    overflow: hidden;
+  }
+
+  .navbar {
+    width: 100vw;
+  }
+
+  .navbarLista {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+    margin-top: 13px
+  }
+
+  .navbarLista li {
+    margin-left: 0;
+    opacity: 0;
+  }
+
+  .menu_mobile {
+    display: block;
+  }
+
+  .navbarListaLi3{
+    order: -1;
+  }
+
+
+}
+
+/* tag li input */ 
+.navbarListaLi {
+  display: block;
+  z-index: 6;
+}
+
+/*  box input  */
+.container_input {
+  display: flex;
+  list-style-type: none;
+  flex-direction: column;
+  width: 200px;
+  height: 30px;
+}
+
+/* estilizando o Placeholder */
+.search::-webkit-input-placeholder{ 
+  font-size: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #aeaeae;
+  height: 25px;
+}
+
+
+/* input */
+.search {
+  z-index: 6;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  border-radius: 0 0 24px 24px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  box-shadow: 0 4px 6px rgb(50 50 50 / 90%);
+  background: #303134;
+  border-color: rgba(223, 225, 229, 0);
+  padding: 4px 3px 0 12px;
+  flex: 100%;
+  white-space: pre;
+  font-size: 16px;
+  color: white;
+  outline: none;
+  padding-bottom: 5px;
+  padding-left: 35px;
+}
+
+/* lupa */
+.container_input::before{
+  content: url('./imagem/loupe-white.png');
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 100;
+  width: 25px;
+  height: 23px;
+  padding: 0px;
+  margin-top: 5px;
+  margin-left: 5px;
+  border-right: 1px solid #48494c;
+  cursor: pointer;
+}
+
+
+
+
+/* div container produtos */
+
+
+/* box resultado do input */
+.produtos p {
+  font-size: 0.8rem;
+  padding: 10px;
+  text-align: center;
+  overflow: hidden;
+  background: #303134;
+  box-shadow: 0 4px 6px 0 #171717;
+  text-align: left;
+  z-index: 989;
+  -webkit-user-select: none;
+  border-top:1px solid #4a4b4f;
+  color: white;
+  
+}
+.produtos{
+  margin-top: -1px;
+  z-index: 100;
+  font-weight: 100 !important;
+}
+
+.produtos p:hover{
+  background-color: #4aff00;
+  color: black;
+  font-weight: 1000;
+}
+
+
+.navbarListaLi4{
+  margin-top: 8px
+}
+
+/* animações menu hamburguer */
+.navbarListaLi.active {
+  animation: navLinkFade 0.5s ease forwards 0.3s;
+}
+
+.navbarListaLi1.active {
+  animation: navLinkFade 0.5s ease forwards 0.3s;
+}
+
+.navbarListaLi2.active {
+  animation: navLinkFade 0.5s ease forwards 0.3s;
+}
+
+.navbarListaLi3.active {
+  animation: navLinkFade 0.5s ease forwards 0.3s;
+}
+
+.navbarListaLi4.active {
+  animation: navLinkFade 0.5s ease forwards 0.3s;
+  margin-top: 7px;
+}
+
+.navbarLista.active {
+  transform: translateX(0);
+  z-index: 5;
+  box-shadow: 50px 50px 50px 0 rgb(50 50 50 / 90%);
+}
+
+@keyframes navLinkFade {
+
+  from {
+    opacity: 0;
+    transform: translateX(0px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+.menu_mobile.active .linha1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.menu_mobile.active .linha2 {
+  opacity: 0;
+}
+
+.menu_mobile.active .linha3 {
+  transform: rotate(45deg) translate(-5px, -7px)
+}
+
+
+
+
+
+
+

@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,100;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100;1,400&display=swap');
+
+
+.new_client{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 52vh;
+}
+
+.titulo_cadastro{
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.form_cadastro{
+  width: 390px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  background-color: white;
+  opacity: .9;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #4aff00;
+}
+
+.form_control{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  color: black;
+  font-size: 18px;
+  text-align: center;
+  
+}
+
+.break{
+  
+    flex-basis: 100%;
+    height: 0;
+ 
+}
+.form_control label{
+  margin-bottom: 3px;
+  text-align: start;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  
+
+}
+
+.form_control input::placeholder{ 
+  font-size: 13px;
+  color: #aeaeae;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.form_control input {
+  padding: .5rem;
+  border-radius: 5px;
+  border: 1px solid #4aff00;
+  background-color: #303134;
+  outline: none;
+  color: white;
+  
+}
+.form_control select{
+  padding: .5rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: rgb(159, 159, 159);
+  font-family: 'Poppins', sans-serif;
+  width: 187px;
+  height: 33px;
+}
+
+.form_control select option{
+  font-weight: bold;
+}
+
+
+.btn_cadastro {
+  background-color: #303134;
+  border: 1px solid #303134;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 10px;
+  width: 120px;
+  height: 30px;
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 20px;
+}
+
+
+.btn_cadastro:hover{
+  color: #303134;
+  background-color: #4aff00;
+  font-weight: bold;
+}
+
+
+.btn_voltar{
+  background-color: #303134;
+  border: 1px solid #303134;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 10px;
+  width: 120px;
+  height: 30px;
+  font-size: 16px;
+  line-height: 22px;
+  margin-right: 60px;
+  margin-top: 20px;
+}
+
+.btn_voltar:hover{
+  color: #303134;
+  background-color: #4aff00;
+  font-weight: bold;
+}
+
+
+
+input[type=number]::-webkit-inner-spin-button { 
+  -webkit-appearance: none;
+  
+}
+input[type=number] { 
+ -moz-appearance: textfield;
+ appearance: textfield;
+
+}

@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+  }
+  
+  /* Card */
+  .card {
+    width: 300px;
+    height: 560px; /*460*/
+    margin: 25px;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+    transition: 0.3s;
+  }
+  
+  /* Card Header*/
+  .card_header {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .card_img {
+    min-width: 100%;
+    width: auto;
+    height: 100%;
+  }
+  
+  /* Card Body */
+  .card_body {
+    height: 180px;
+    padding: 15px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .card_local {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .card_titulo {
+    color: #000;
+    font-size: 32px;
+    margin: 15px 0;
+  }
+  
+  .card_texto {
+    color: #000;
+    font-size: 12px;
+    width: 250px;
+    margin: 0 auto;
+  }
+  
+  /* Card Footer */
+  .card_footer {
+    margin-top: 110px;
+    text-align: center;
+    background-color: #000;
+  }
+  
+  .card_footer a {
+    color: #fff;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 600;
+  }
+
+  .card_footer a:hover{
+    color: #1bfa4b
+  }
+ 
+  
+  /* Cores Cards */
+  .card .card_footer {
+    background: linear-gradient(135deg, #1bfa4b, #000000);
+  }
+  
+  .card .card_local {
+    color: #2740d1;
+  }
+  
+  
+  /* Animação Hover */
+  .card:hover {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+ 
+  .titulo{
+    font-size: 48px;
+    font-family: 'Verdana';
+  }
+
+/*COR DA LETRA IRON SHAPE*/
+  .titulo span{
+    color: #4aff00;
+    text-shadow: 0 0 8px black;
+    font-size: 60px;
+    text-transform: uppercase;
+    font-family: 'Poppins';
+}

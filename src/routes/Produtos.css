@@ -1,0 +1,101 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.containerTextosProdutos{
+display: flex;
+justify-content: space-between;
+flex-direction: column;
+height: 150px;
+
+
+}
+
+.containerImgProdutos{
+  width: 15em;
+  height: 17em;
+}
+
+.tituloProdutos{
+  font-size: 50px;
+  color: #4aff00;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  flex-wrap: wrap;
+}
+.card {
+  border-radius: 5px;
+  box-shadow: 7px 7px 13px 0px rgb(1, 255, 34);
+  padding: 30px;
+  margin: 20px;
+  width: 250px;
+  height: 60vh;
+  transition: all 0.3s ease-out;
+  background: linear-gradient(-45deg, #3c3c3c, rgb(70, 69, 69), black, white);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  margin-bottom: 3em;
+  width: 15em;
+  height: 17em;
+  background-size: cover;
+}
+
+.card h2 {
+  margin-bottom: 0.7em;
+}
+
+.image {
+  float: right;
+  max-width: 200%;
+  max-height: 350px;
+}
+
+.green {
+  border-left: 3px solid #ffffff;
+}
+
+.red {
+  border-left: 3px solid #ffffff;
+}
+
+.btnCarrinho {
+  cursor: pointer;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  background-color: #fff;
+  font-weight: bold;
+  transition: 0.3s;
+  width: 150px;
+  display: flex;
+  align-content: flex-end;
+  justify-content: center;
+  align-items: center
+}
+
+.btnCarrinho img{
+  width: 25px;
+  height: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.btnCarrinho:hover {
+  background-color: #4aff00;
+}

@@ -1,0 +1,112 @@
+/* Titulo dos planos */
+.tituloPlanos{
+    font-size: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #4aff00;
+}
+.textoPlanos{
+    font-weight: 2;
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+/* box dos  */
+.containerCardsPlanos{
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, .2fr));
+    padding: 30px;
+    justify-content: center;
+    justify-items: center;
+
+}
+.containerTextosPlanos{
+    color: white;
+    width: 300px;
+    height: 200px;
+}
+
+
+
+.cardsPlanos {
+    box-shadow: 0 4px 8px 0;
+    width: 300px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background-color:black;
+    border: 2px solid #4aff00;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+
+.containerTextosPlanos p{
+    color: white;
+}
+.imagemCard{
+    width: 300px;
+    height: 400px;
+    background-size: cover;
+}
+
+.price {
+    color: rgb(95, 95, 95);
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.cardsPlanos a{
+    width: 100px;
+    color:white;
+    background-color:black;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 30px;
+}
+
+.cardsPlanos a:hover {
+    border: 1px solid #4aff00;
+}
+
+
+
+
+@media (max-width: 1074px){
+    .imagemCard{
+        width: 300px;
+        height: 360px;
+        
+    }
+    .cardsPlanos{
+      height: 450px;
+      width: 300px;
+      overflow: hidden;
+    }
+    .atividadesPlanos{
+      display: none;
+    }
+    .container-textos{
+      margin: 0;
+      padding: 0;
+    }
+    .containerTextosPlanos{
+        width: 300px;
+        height: 40px;
+    }
+  
+  }
+
+
